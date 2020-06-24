@@ -243,7 +243,10 @@ export default {
     },
 
     onCellClick (DOMEvent) {
-      if (!this.isDOMElementAnEvent(DOMEvent.target)) this.selectCell(DOMEvent)
+      // if (!this.isDOMElementAnEvent(DOMEvent.target)) this.selectCell(DOMEvent)
+      
+      // Fire cell click all the time
+      this.selectCell(DOMEvent)
     },
 
     onCellDblClick (DOMEvent) {
